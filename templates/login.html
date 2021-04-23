@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container" id="container">
+      <div class="form-container sign-in-container">
+          <form method="post" action="/login_validation">
+              <h1>Sign in</h1>
+              <span>or use your account</span>
+              <input type="email" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <button>Submit</button>
+          </form>
+      </div>
+      <div class="overlay-container">
+          <div class="overlay">
+              <div class="overlay-panel overlay-right">
+                  <h1>Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <a href="/register"><button class="ghost" id="signUp" >Sign Up</button></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
